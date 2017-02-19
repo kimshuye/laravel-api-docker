@@ -19,18 +19,17 @@ Start docker container.
     
     $ docker-compose up -d
 
+Create and setting env file.
+
+    $ cp .env.example .env
+
 Install dependency libraly.
 
     $ docker-compose run web composer install
 
 Move laravel directory and change permission.
 
-    $ chmod 777 -R storage
-
-Create and setting env file.
-
-    $ cp .env.example .env
-    $ vi .env
+    $ chmod 777 -R laravel/storage
 
 Create key
 

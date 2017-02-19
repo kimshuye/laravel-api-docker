@@ -12,7 +12,7 @@ services:
   web:
     build: .
     volumes:
-      - .:/var/www/html
+      - ./laravel:/var/www/html
       - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf
     ports:
       - "80:80"

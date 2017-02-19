@@ -1,7 +1,21 @@
 # laravel-api-docker
-You need to install docker-compose
+    
+Install docker on CentOS7
+    
+    $ sudo yum install -y yum-utils
+    $ sudo yum-config-manager \
+    --add-repo \
+    https://docs.docker.com/engine/installation/linux/repo_files/centos/docker.repo
+    $ sudo yum -y install docker-engine
+    $ curl -L "https://github.com/docker/compose/releases/download/1.11.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    $ chmod +x /usr/local/bin/docker-compose
 
-start docker container.
+Start docker daemon.
+
+    $ systemctl start docker
+    $ systemctl enable docker
+
+Start docker container.
     
     $ docker-compose up -d
 

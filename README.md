@@ -33,4 +33,4 @@ Move laravel directory and change permission.
 
 Create key
 
-    $ docker-compose run web php /var/www/html/laravel/artisan key:generate
+    $ docker-compose run web php /var/www/html/artisan key:generate
